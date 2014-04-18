@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>My-bin-pack</title>
+    <script src='jquery.js'>        </script>
+  <script src='packer.js'>        </script>
+  <script src='packer.growing.js'></script>
   </head>
 
   <body>
@@ -34,6 +37,34 @@
         <p>demo-here</p>
       </section>
     </div>
+
+<script>
+
+  var blocks = [
+    { w: 100, h: 100 },
+    { w: 100, h: 100 },
+    { w:  80, h:  80 },
+    { w:  89, h:  180 },
+        { w:  180, h:  80 },
+            { w:  80, h:  180 },
+                { w:  80, h:  100 },
+                    { w:  420, h:  80 }
+  ];
+
+var packer = new Packer(500, 500);
+  packer.fit(blocks);
+
+   for(var n = 0 ; n < blocks.length ; n++) {
+    var block = blocks[n];
+    if (block.fit) {
+      $('body').append("<div style='border:1px solid black;position:absolute;top:"+block.fit.y+"px;left:"+block.fit.x+"px;width:"+block.w+"px;height:"+block.h+"px;'>"+block.fit.x+", "+block.fit.y+", "+block.w+", "+block.h+"</div>");
+
+     // drawMe(block.fit.x, block.fit.y, block.w, block.h);
+    }
+  }
+
+</script>
+
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
