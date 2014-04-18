@@ -33,6 +33,30 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+        Here, the panel size is 500x500<br>
+        
+      <br>  The blocks (or fve's :-) that have to be fitted in the panel are:
+        
+            { w: 100, h: 100 },<br>
+            { w: 100, h: 100 },<br>
+            { w:  80, h:  80 },<br>
+            { w:  89, h:  180 },<br>
+            { w:  180, h:  80 },<br>
+            { w:  80, h:  180 },<br>
+            { w:  80, h:  100 },<br>
+            { w:  420, h:  80 }<br>
+            
+           <h3> Algorithm used is really simple:<hr>
+            <br>
+            
+<p><strong>
+This is a very simple binary tree based bin packing algorithm that is initialized<br>
+with a fixed width and height and will fit each block into the first node where<br>
+it fits and then split that node into 2 parts (down and right) to track the<br>
+remaining whitespace.<br>
+
+Best results occur when the input blocks are sorted by height, or even better<br>
+when sorted by max(width,height).</p><strong><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         
       </section>
     </div>
