@@ -7,7 +7,7 @@ this is a simple bin-packing algorithm
 
 try demo here:
 
-https://my-bin-pack.github.io
+http://deepakparyani.github.io/my-bin-pack.github.io/
 
 Thanks to: https://github.com/jakesgordon/
 
