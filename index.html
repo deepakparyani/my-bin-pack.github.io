@@ -56,7 +56,7 @@ var packer = new Packer(500, 500);
    for(var n = 0 ; n < blocks.length ; n++) {
     var block = blocks[n];
     if (block.fit) {
-      $('body').append("<div style='border:1px solid black;position:absolute;top:"+block.fit.y+"px;left:"+block.fit.x+"px;width:"+block.w+"px;height:"+block.h+"px;'>"+block.fit.x+", "+block.fit.y+", "+block.w+", "+block.h+"</div>");
+      $('#main_content').append("<div style='border:1px solid black;position:absolute;top:"+block.fit.y+"px;left:"+block.fit.x+"px;width:"+block.w+"px;height:"+block.h+"px;'>"+block.fit.x+", "+block.fit.y+", "+block.w+", "+block.h+"</div>");
 
      // drawMe(block.fit.x, block.fit.y, block.w, block.h);
     }
