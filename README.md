@@ -10,3 +10,8 @@ try demo here:
 https://my-bin-pack.github.io
 
 Thanks to: https://github.com/jakesgordon/
+
+License
+=======
+
+See [LICENSE](https://github.com/jakesgordon/bin-packing/blob/master/LICENSE) file.
