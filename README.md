@@ -7,6 +7,6 @@ this is a simple bin-packing algorithm
 
 try demo here:
 
-my-bin-pack.github.io
+https://my-bin-pack.github.io
 
 Thanks to: https://github.com/jakesgordon/
